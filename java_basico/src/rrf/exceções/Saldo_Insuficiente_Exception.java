@@ -13,6 +13,10 @@ public class Saldo_Insuficiente_Exception extends RuntimeException{
 		this.saldoAtual = 0;	
 	}
 	
+	public Saldo_Insuficiente_Exception(Integer saldo) {
+		saldoAtual = Double.valueOf(saldo);
+	}
+	
 	public double getSaldoAtual() {
 		return saldoAtual;
 	}
