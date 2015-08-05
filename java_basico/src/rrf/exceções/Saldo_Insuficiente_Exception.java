@@ -9,6 +9,10 @@ public class Saldo_Insuficiente_Exception extends RuntimeException{
 		this.saldoAtual = saldoAtual;		
 	}
 	
+	public Saldo_Insuficiente_Exception() {
+		this.saldoAtual = 0;	
+	}
+	
 	public double getSaldoAtual() {
 		return saldoAtual;
 	}
